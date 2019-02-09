@@ -1,0 +1,34 @@
+body {
+	background-color: silver;
+}
+
+button {
+	cursor: pointer;
+
+}
+
+h2 {
+	text-align: right; 
+	width: 100%;
+	font-size: 2em;
+	font-weight: 1.2em;
+	background-color: #fff;
+	border-radius: 5px;
+}
+.operator {
+	background-color: #008b8b;
+	color: white;
+}
+#main {
+
+	width: 800px;
+}
+#second {
+	margin-top: 100px;
+	background-color: #1a3e3a;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 5px;
+}
+.btn {
+	font-size: 1.2em;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/calculator.css">
+</head>
+<body ng-app="calcApp">
+
+
+	<div class="container mt-5 mb-5" id="main" ng-controller="calcController as calc">
+		<div class="row">
+			<div class="col-6 offset-3">
+				<div class="container" id="second">
+					<div class="row mb-3">
+						<div class="col-12">
+							<h2 class="mt-2">{{calc.expression}}</h2>
+						</div>
+					</div>
+					<div class="row mb-2">
+						<div class="col-6">
+							<button class="btn btn-block btn-success" ng-click="calc.initialise()">C</button>
+						</div>
+						<div class="col-6">
+							<button class="btn btn-block btn-success" ng-click="calc.supprimeNombreCourant()">CE</button>
+						</div>
+						
+					</div>
+					<div class="row mb-2">
+						<div class="col-3">
+							<button class="btn btn-block btn-primary" ng-click="calc.sept()">7</button>
+						</div>
+						<div class="col-3">
+							<button class="btn btn-block btn-primary" ng-click="calc.huit()">8</button>
+						</div>
+						<div class="col-3">
+							<button class="btn btn-block btn-primary" ng-click="calc.neuf()">9</button>
+						</div>
+						<div class="col-3">
+							<button class="btn btn-block operator" ng-click="calc.divise()">/</button>
+						</div>
+					</div>
+
+					<div class="row mb-2">
+						<div class="col-3">
+							<button class="btn btn-block btn-primary" ng-click="calc.quatre()">4</button>
+						</div>
+						<div class="col-3">
+							<button class="btn btn-block btn-primary" ng-click="calc.cinq()">5</button>
+						</div>
+						<div class="col-3">
+							<button class="btn btn-block btn-primary" ng-click="calc.six()">6</button>
+						</div>
+						<div class="col-3">
+							<button class="btn btn-block operator" ng-click="calc.fois()">*</button>
+						</div>
+					</div>
+					<div class="row mb-2">
+						<div class="col-3">
+							<button class="btn btn-block btn-primary" ng-click="calc.un()">1</button>
+						</div>
+						<div class="col-3">
+							<button class="btn  btn-block btn-primary" ng-click="calc.deux()">2</button>
+						</div>
+						<div class="col-3">
+							<button class="btn  btn-block btn-primary" ng-click="calc.trois()">3</button>
+						</div>
+						<div class="col-3">
+							<button class="btn  btn-block operator" ng-click="calc.moins()">-</button>
+						</div>
+					</div>
+					<div class="row mb-2">
+						<div class="col-3">
+							<button class="btn btn-block btn-primary" ng-click="calc.zero()">0</button>
+						</div>
+						<div class="col-3">
+							<button class="btn btn-block btn-success" ng-click="calc.point()">.</button>
+						</div>
+						<div class="col-3">
+							<button class="btn btn-block btn-success mb-2" ng-click="calc.evalue()">=</button>
+						</div>
+						<div class="col-3">
+							<button class="btn btn-block operator mb-2" ng-click="calc.plus()">+</button>
+						</div>
+						
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		
+			
+	</div>
+
+	<script src="lib/angular.min.js"></script>
+	<script src="lib/jquery-3.1.1.min.js"></script>
+	<script src="lib/bootstrap.min.js"></script>
+	<script src="js/calculator.js"></script>
+</body>
+</html>
